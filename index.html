@@ -8,8 +8,9 @@
 	<meta property="og:description" content="Friends & Family! Please join us as we raise a glass to our lives in Portland, and to our new adventures in the Netherlands. Bonus! It also happens to be our 7th wedding anniversary!">
 	<meta property="og:image" content="http://farewellpdx.xyz/tulip.jpg">
 	<meta property="og:url" content="http://farewellpdx.xyz/">
-	
-	
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<link href='https://fonts.googleapis.com/css?family=Lobster|Lato' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<link href="http://addtocalendar.com/atc/1.5/atc-base.css" rel="stylesheet" type="text/css">
@@ -22,6 +23,16 @@
 			font-size: 18px;
 			max-width: 700px;
 			margin: 0 auto;
+			line-height: 1.4;
+		}
+		p {
+			margin: 12px 0;
+		}
+		.text-small {
+			font-size: 0.8em;
+		}
+		.text-muted, h1 small {
+			color: #536c72;
 		}
 		h1, h2, h3 {
 			font-family: Lobster, serif;
@@ -47,10 +58,12 @@
 			background-color: #d07979;
 			border: #d07979;
 		}
+		.btn-lg {
+			font-size: 2em;
+		}
 		.card {
 			box-shadow: 0 0.1em 0.1em rgba(0,0,0,0.3);
 			margin: 2em auto;
-			text-align: center;
 			background-color: #fff;
 			border-radius: 0.5em;
 		}
@@ -58,10 +71,10 @@
 			border-radius: 0.5em 0.5em 0 0;
 		}
 		.card-body {
-			padding: 1em;
+			padding: 1em 2em;
 		}
 		img {
-			width: 100%;
+			max-width: 100%;
 			height:auto;
 		}
 		@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
@@ -89,24 +102,40 @@
 	<div class="card fade-in">
 		<img src="./tulip.jpg" alt="">
 		<div class="card-body">
-			<h1><small>Piet &amp; Keven say</small><br> Farewell Portland, <br>Hallo Leiden</h1>
+			<h1 class="text-center"><small>Piet &amp; Keven say</small><br> Farewell Portland, <br>Hallo Leiden</h1>
 			<p>Friends & Family! Please join us as we raise a glass to our lives in Portland, and to our new adventures in the Netherlands. Bonus! It also happens to be our 7th wedding anniversary!</p>
 			<p>We will be partying all night at the <a href="http://www.migrationbrewing.com/" target="_blank">Migration Brewing Annex</a> on NE Glisan. We will have our own private bar, so come thirsty! There is also a full <a href="http://www.migrationbrewing.com/pdfs/food-menu-active.pdf" target="_blank">pub food menu</a> if you're hungry. Kids are welcome too until 10PM. This is an open invitation, so please feel free to bring anyone along that you think would like to be there.</p>
-			<p>This move is happening so fast, and we know we regretfully won't have a chance to see you all individually before we go. But it would ease our aching hearts to see you all laughing and kicking up your heels in one place. So please join us for one last (for now) Portland hoorah!</p>
-			<p>Love, Piet &amp; Keven</p>
+			<p>This move is happening so fast, and we know we regretfully won't have a chance to see you all individually before we go. But it would ease our aching hearts to see you all laughing and kicking up your heels in one place. So please RSVP and join us for one last (for now) Portland hoorah!</p>
+			<div class="text-center">
+				<p>Love, Piet &amp; Keven</p>
+				<img src="./emoji_set_126.png" width="30" alt="">
+			</div>
 
-			<h2>Who:</h2>
-			<p>You! Our beautiful friends and family!</p>
+		</div>
+	</div>
 
-			<h2>Where:</h2>
+	<div class="card fade-in">
+		<div class="card-body text-center">
+			<h1>Join us!</h1>
+
+			<h2>What?</h2>
+			<p>We're moving to <a href="https://www.google.com/maps/place/Leiden,+Netherlands" target="_blank">Leiden</a>, so we're having a party and you're invited!</p>
+
+			<h2>Who?</h2>
+			<p>You! Our beautiful friends and family.</p>
+
+			<h2>Where?</h2>
 			<address>
 				Migration Brewing Annex <br>
-				<a href="https://www.google.com/maps/place/Migration+Brewing/@45.5262074,-122.6386023,17z/data=!3m1!4b1!4m5!3m4!1s0x5495a0c767e76cc7:0xa6d7bc167f4333cc!8m2!3d45.5262074!4d-122.6364136">2828 NE Glisan St, Portland OR 97232</a>
+				<a href="https://www.google.com/maps/place/Migration+Brewing/@45.5262074,-122.6386023,17z/data=!3m1!4b1!4m5!3m4!1s0x5495a0c767e76cc7:0xa6d7bc167f4333cc!8m2!3d45.5262074!4d-122.6364136">2828 NE Glisan St, Portland OR 97232</a><br>
+				We'll have our own bar! Just for us.
 			</address>
 
-			<h2>When:</h2>
-			<p><time datetime="2016-07-23T18:00:00-07:00">Saturday July 23rd, 6pm til close</time></p>
-			<p>Kids are welcome untill 10pm!</p>
+			<h2>When?</h2>
+			<p>
+				<time datetime="2016-07-23T18:00:00-08:00">Saturday July 23rd, 6pm til close.</time><br>
+				Kids are welcome until 10pm.
+			</p>
 
 			<span class="addtocalendar atc-style-blue">
 				<var class="atc_event">
@@ -121,11 +150,13 @@
 				</var>
 			</span>
 
-			<br>
-			<br>
-			<br>
-			<p><a href="https://docs.google.com/forms/d/1pVeXFcj8uN0B9ibcOCQ7a7Ehpun6ycP0QMAUxxlczLs/viewform" class="btn btn-lg btn-primary">RSVP!</a></p>
-			<p>Go on! Come join us!</p>
+			<h2>What now?</h2>
+			<p>RSVP! Even if you can't make it.</p>
+			<p>
+				<img src="./party.png" width="30" alt="">&nbsp;&nbsp;&nbsp;
+				<a href="https://docs.google.com/forms/d/1pVeXFcj8uN0B9ibcOCQ7a7Ehpun6ycP0QMAUxxlczLs/viewform" class="btn btn-lg btn-primary">RSVP</a>
+				&nbsp;&nbsp;&nbsp;<img src="./party.png" width="30" alt="">
+			</p>
 		</div>
 	</div>
 	<div class="card">
@@ -133,17 +164,18 @@
 			<div id="disqus_thread"></div>
 		</div>
 	</div>
+
+	<footer class="text-center text-muted text-small">
+		<p>Made by Piet &amp; Keven &nbsp;</p>
+		<img src="./emoji_set_126.png" width="20" alt="">
+		<p><span class="text-small">(but mostly Piet)</span></p>
+	</footer>
+
 	<script>
-		/**
-		 * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-		 * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
-		 */
-		/*
-		 var disqus_config = function () {
-		 this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
-		 this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-		 };
-		 */
+		var disqus_config = function () {
+			this.page.url = 'http://farewellpdx.xyz'; // Replace PAGE_URL with your page's canonical URL variable
+			this.page.identifier = 'farewellpdx-home'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+		};
 		(function() { // DON'T EDIT BELOW THIS LINE
 			var d = document, s = d.createElement('script');
 
@@ -164,7 +196,6 @@
 		ga('send', 'pageview');
 
 	</script>
-	<!-- 2. Include script -->
 	<script type="text/javascript">(function () {
 		if (window.addtocalendar)if(typeof window.addtocalendar.start == "function")return;
 		if (window.ifaddtocalendar == undefined) { window.ifaddtocalendar = 1;
